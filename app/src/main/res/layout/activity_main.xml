@@ -26,11 +26,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="@string/string_hint_nickname"
         android:inputType="textPersonName"
-        android:text="Name"
         android:textAlignment="center"
-        android:textColor="@color/colorPrimaryDark"
-        tools:text="@string/string_hint_nickname" />
+        android:textColor="@android:color/black" />
 
     <ImageView
         android:id="@+id/id_ImageView_YellowStar"
