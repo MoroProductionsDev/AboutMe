@@ -1,4 +1,20 @@
 <resources>
     <string name="app_name">About Me</string>
     <string name="string_textName">Raul</string>
+    <string name="string_yellow_star">Yellow Star</string>
+    <string name="string_description_ImageView_yellowStar">Yellow Star Rating ImageView</string>
+    <string name="string_bio_TextView">..............
+    ..................................\n
+    ..............................\n
+    ...............................\n
+    ..............................\n
+    .....................\n
+    .....................................\n
+    ............................................\n
+    .........................................\n
+    ...................................\n
+    ......................\n
+    ....................................\n
+    ..............................\n
+    ..................................</string>
 </resources>
