@@ -31,6 +31,16 @@
         android:textAlignment="center"
         android:textColor="@android:color/black" />
 
+    <Button
+        android:id="@+id/id_btn_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_layout_margin"
+        android:text="@string/string_btn_done"
+        style="@style/Widget.AppCompat.Button.Colored"
+        tools:text="@string/string_btn_done" />
+
     <ImageView
         android:id="@+id/id_ImageView_YellowStar"
         android:layout_width="match_parent"
