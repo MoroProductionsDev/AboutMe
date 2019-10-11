@@ -21,7 +21,7 @@
         android:textAlignment="center" />
 
     <EditText
-        android:id="@+id/id_text_nickname"
+        android:id="@+id/id_textfield_nickname"
         style="@style/style_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,6 +40,14 @@
         android:text="@string/string_btn_done"
         style="@style/Widget.AppCompat.Button.Colored"
         tools:text="@string/string_btn_done" />
+
+    <TextView
+        android:id="@+id/id_textview_nickname"
+        style="@style/style_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/id_ImageView_YellowStar"
