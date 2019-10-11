@@ -8,15 +8,15 @@ import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.TextView
-import androidx.databinding.DataBindingComponent
 import androidx.databinding.DataBindingUtil
 import com.example.aboutme.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding //  binding object (wil bind layout with activity main)
+    /*
     lateinit var editText : EditText
     lateinit var nicknameTextview: TextView
-
+    */
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,12 +41,13 @@ class MainActivity : AppCompatActivity() {
         // editText.visibility = View.GONE // nickname texfield
         // view.visibility = View.GONE  // done button
         // nicknameTextview.visibility = View.VISIBLE  // nickname textview
-        binding.idTextviewNickname.text = editText.text
-        binding.idTextfieldNickname.visibility = View.GONE
-        binding.idBtnDone.visibility = View.GONE
-        binding.idTextviewNickname.visibility = View.VISIBLE
-
-
+        binding.apply {
+            idTextviewNickname.text = idTextfieldNickname.text
+            idTextfieldNickname.visibility = View.GONE
+            idBtnDone.visibility = View.GONE
+            idTextviewNickname.visibility = View.VISIBLE
+            invalidateAll()
+        }
         // hide the keyboard
         val board = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         board.hideSoftInputFromWindow(view.windowToken, 0)
