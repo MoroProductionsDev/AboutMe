@@ -13,6 +13,7 @@ import com.example.aboutme.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding //  binding object (wil bind layout with activity main)
+    private val myName : MyName = MyName( "Raul")
     /*
     lateinit var editText : EditText
     lateinit var nicknameTextview: TextView
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         // setContentView(R.layout.activity_main)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding.myName = myName
 
         //findViewById<Button>(R.id.id_btn_done).setOnClickListener {
         //    addNickName(it)  // it is the btn_done
@@ -42,7 +44,8 @@ class MainActivity : AppCompatActivity() {
         // view.visibility = View.GONE  // done button
         // nicknameTextview.visibility = View.VISIBLE  // nickname textview
         binding.apply {
-            idTextviewNickname.text = idTextfieldNickname.text
+            //idTextviewNickname.text = idTextfieldNickname.text
+            myName?.nickname = idTextfieldNickname.text.toString()
             idTextfieldNickname.visibility = View.GONE
             idBtnDone.visibility = View.GONE
             idTextviewNickname.visibility = View.VISIBLE
