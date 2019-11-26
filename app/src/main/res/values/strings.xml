@@ -5,31 +5,14 @@
     <string name="string_description_ImageView_yellowStar">Yellow Star Rating ImageView</string>
     <string name="string_hint_nickname">What is your nick name?</string>
     <string name="string_btn_done">Done</string>
-    <string name="string_bio_TextView">..............
-    ..................................\n
-    ..............................\n
-    ...............................\n
-    ..............................\n
-    .....................\n
-    .....................................\n
-    ............................................\n
-    .........................................\n
-    ...................................\n
-    ......................\n
-    ....................................\n
-    ..............................\n
-    ..................................\n
-        ..................................\n
-    ..............................\n
-    ...............................\n
-    ..............................\n
-    .....................\n
-    .....................................\n
-    ............................................\n
-    .........................................\n
-    ...................................\n
-    ......................\n
-    ....................................\n
-    ..............................\n
-    ..................................\n\n</string>
+    <string name="string_bio_TextView">
+        Hello my name is Raul,\n
+        I am recent software programming graduate\n
+        who is currently seeking experience in the industry.\n
+        I currently studying more languages and also tutoring\n
+        on the weekends at CSN software labs.\n\n
+
+        I enjoy very much tutoring students, I keeps me interactive\n
+        and envolve with studies.\n
+    </string>
 </resources>
